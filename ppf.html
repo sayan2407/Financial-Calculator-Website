@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="myscript.js"></script>
+  <style>
+     .btn-success{
+      padding:8px;
+      width:100px;
+      margin-right:20px;
+   }
+   .btn-warning{
+      padding:8px;
+      width:100px;
+      margin-left:20px;
+   }
+  </style>
+  <title>Financial Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <h2 style="margin-left:20px">
+   Financial Calculator
+ </h2>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+   <ul class="nav navbar-nav">
+     <li><a href="index.html">EMI Calculator</a></li>
+     <li><a href="gst.html">GST Calculator</a></li>
+      <li class="active"><a href="ppf.html">PPF Calculator</a></li>
+      <li><a href="sip.html">SIP Calculator</a></li>
+  </ul>
+  </div>
+ </nav>
+ <div class="container">
+   <div class="row">
+     <div class="col-xs-2"></div>
+     <div class="col-xs-8">
+      <h2>PPF Calculator</h2>
+    <form name="myform">
+     <label for="amount">Yearly Deposit :</label><br>
+     <input class="form-control" type="text" id="amount" name="amount" placeholder="Enter amount"></br>
+    <label for="interest">Rate Of Interest(p.a) : </label>
+    <input class="form-control" id="interest" type="text" name="interest" placeholder="Enter rate of interest"><br>
+     <label for="time">Investment Period In Year : </label>
+    <input class="form-control" id="time" type="text" name="time" placeholder="Enter years"><br>
+     </form>
+     
+      <button type="button" class="btn-success" onclick="ppfCalculate()"> Calculate </button>
+      <button type="button" class="btn-warning"> Reset </button><br><br><br>
+     <div class="container-fluid" style="padding-top:10px;background-color:lavenderblush">
+     <p id="deposite"><b>Total Deposit :</b></p>
+     </div></br>
+     <div class="container-fluid" style="padding-top:10px;background-color:lavender">
+     <p id="rate1"><b>Total Interest :</b></p>
+      </div></br>
+      <div class="container-fluid" style="padding-top:10px;background-color:lavenderblush">
+     <p id="mamount"><b>Maturity Amount :</b></p>
+     </div></br>
+     
+    </div>
+    <div class="col-xs-2">
+        <script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=219242&format=300x250&ga=g"></script>
+<noscript><a href="https://yllix.com/publishers/219242" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/300x250.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
+    </div>
+  </div>
+ </div>
+ 
+ 
+</body>
+</html>
